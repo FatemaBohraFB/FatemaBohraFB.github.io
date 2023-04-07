@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- favicon -->
+    <link rel="icon" href="../ourEarth.png">
+    <title>about.html</title>
+    <!--Link to the styles.css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="javaPhotoGallery">
+    <header>
+        <div class="logo">
+            <a data-active="Home" href="index.html">
+                <p>FunLearning</p>
+            </a>
+        </div>
+        <div class="links">
+            <nav>
+                <ul class="menu">
+                    <a data-active="javaPhotoGallery" href="javaPhotoGallery.html">JavaPhotoGallery</a>
+                    <a data-active="about" href="about.html">About</a>
+                    <a data-active="LearnJava" href="LearnJava.html">LearnJava</a>
+                    <a data-active="Home" href="index.html">Home</a>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="photo-gallery">
+        <!-- image on the home page -->
+        <img width="380" height="250" src="../Variables.jpg" alt="Java variables">
+        <img width="400" height="250" src="../Arrays.jpg" alt="Java arrays">
+        <img width="400" height="250" src="../forLoop.jpg" alt="Java for loops">
+        <img width="400" height="250" src="../whileLoop.jpg" alt="Java while loops">
+    </div>
+    <div class="container">
+        <h1>Current Time</h1>
+        <p id="time"></p>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

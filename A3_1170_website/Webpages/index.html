@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- favicon -->
+    <link rel="icon" href="../ourEarth.png">
+    <title>index.html</title>
+    <!--Link to the styles.css-->
+    <link href="style.css" rel="stylesheet">
+    <!--Responsive Web Design-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="Home">
+    <header>
+        <div class="logo">
+            <a data-active="Home" href="index.html">
+                <p>FunLearning</p>
+            </a>
+        </div>
+        <div class="links">
+            <nav>
+                <ul class="menu">
+                    <a data-active="javaPhotoGallery" href="javaPhotoGallery.html">JavaPhotoGallery</a>
+                    <a data-active="about" href="about.html">About</a>
+                    <a data-active="LearnJava" href="LearnJava.html">LearnJava</a>
+                    <a data-active="Home" href="index.html">Home</a>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="hero-text">
+        <h1>Discover And <br> Learn New <br> Languages...</h1>
+    </div>
+    <div class="hero-image">
+        <!-- image on the home page -->
+        <img width="400" height="350" src="../Logo.jpeg" alt="Python and Java logo">
+    </div>
+    <button id="color-changer1">Color Pallete1</button><br>
+    <button id="color-changer2">Color Pallete2</button><br>
+    <button id="color-changer3">Color Pallete3</button>
+    <button id="button1" onclick="fun()">Click for notification</button>
+    <section class="footerclass" id="selfLearning">
+        <p>Self Learning is Best Learning!</p>
+    </section>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

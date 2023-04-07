@@ -1,0 +1,978 @@
+/* code for 0-999*/
+
+body {
+    background-color: rgb(88, 87, 87);
+    color: white;
+}
+
+/* all the links --> anchor tag */
+a:hover {
+    color: black;
+    background-color: rgb(88, 87, 87);
+}
+
+nav a.active {
+    background-color: rgb(88, 87, 87);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 10px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+#button1 {
+    float: right;
+}
+
+@media (max-width: 999px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav.active .menu {
+        display: block;
+    }
+
+    .menu.visible {
+        display: block;
+    }
+}
+
+/* logo (anchor tag) link */
+.logo p:hover {
+    color: black;
+}
+
+.logo p:hover {
+    background-color: gray;
+}
+
+/* form submit button */
+input[type=submit]:hover {
+    background-color: rgb(38, 37, 37);
+}
+
+/* index.html page Flexbox style */
+header {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #964B00;
+    color: white;
+    width: 100%;
+    height: 75px;
+}
+
+.hero-text {
+    padding: 160px 0px 5px 5px;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.logo p {
+    font-size: 20px;
+    font-weight: 15px;
+    color: white;
+    float: left;
+}
+
+#selfLearning {
+    text-align: center;
+    color: white;
+    padding: 100px;
+    font-size: large;
+}
+
+/* LearnPython.html page style */
+h3 {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+/* Selectors */
+
+/* Universal selector */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* mutiple selector*/
+.youtubeVideo,
+.learnJavaHeading,
+.imgJavaCode {
+    text-align: center;
+    color: white;
+}
+
+.learnJavaHeading,
+.aboutHeading {
+    padding: 160px 0px 30px 0px;
+}
+
+.learnJavaHeading,
+.imgJavaCode {
+    background-color: rgb(88, 87, 87);
+    color: white;
+}
+
+img,
+video,
+iframe {
+    margin: 15px;
+    padding: 5px;
+    border: 5px solid black;
+    background-color: #964B00;
+}
+
+ol,
+ul {
+    padding: 20px;
+}
+
+table,
+th {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+/* Sibling selector */
+
+h1~p {
+    text-align: center;
+    color: black;
+    background-color: #d87109;
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Child Selector */
+ul>a {
+    float: right;
+    font-size: 15px;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: solid;
+}
+
+/* Adjacent selector */
+h3+p {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+    background-color: yellow;
+}
+
+input[type=submit] {
+    width: 200px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type=text],
+select {
+    box-sizing: border-box;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+input[type=email],
+select {
+    box-sizing: border-box;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+textarea[name="comments"] {
+    border: 2px solid black;
+    font-size: 30px;
+}
+
+/* Pseudo element selector */
+
+/* Descendant */
+ol ol {
+    list-style-type: lower-alpha;
+    font-size: 20px;
+}
+
+ol {
+    padding: 40px;
+    list-style-type: decimal;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: square;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.youtubeVideo {
+    background-color: #964B00;
+}
+
+/* LearnJava.html page Grid */
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+    padding-top: 20px;
+    background: #964B00;
+}
+
+/* about.html page */
+table {
+    text-align: center;
+    font-size: 30px;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 200px 200px 20px 200px;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s;
+    object-position: bottom;
+}
+
+p h5 {
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+#message {
+    color: black;
+}
+
+form {
+    padding-left: 80px;
+    font-size: 30px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.daytime {
+    background-color: #7FB3D5;
+    /* blue */
+    color: #fff;
+}
+
+.nighttime {
+    background-color: #070A1E;
+    /* dark blue */
+    color: #fff;
+}
+
+.body-new1 {
+    background-color: #795F11;
+    color: black;
+}
+
+/* New colors for header */
+.header-new1 {
+    background-color: #660096;
+    color: white;
+}
+
+.body-new2 {
+    background-color: #048E75;
+    color: black;
+}
+
+/* New colors for header */
+.header-new2 {
+    background-color: #152E05;
+    color: white;
+}
+
+.body-new3 {
+    background-color: #CA9F20;
+    color: black;
+}
+
+/* New colors for header */
+.header-new3 {
+    background-color: #009633;
+    color: white;
+}
+
+@media (min-width:1000px) {
+    body {
+        background-color: rgb(88, 87, 87);
+        color: white;
+    }
+
+    /* all the links --> anchor tag */
+    a:hover {
+        color: black;
+        background-color: rgb(88, 87, 87);
+    }
+
+    nav a.active {
+        background-color: rgb(88, 87, 87);
+    }
+
+    /* logo (anchor tag) link */
+    .logo p:hover {
+        color: black;
+        background-color: gray;
+    }
+
+    /* form submit button */
+    input[type=submit]:hover {
+        background-color: rgb(38, 37, 37);
+    }
+
+    /* index.html page Flexbox style */
+    header {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 10%;
+        background-color: #964B00;
+        color: white;
+        width: 100%;
+        height: 75px;
+    }
+
+    .hero-text {
+        padding: 160px 0px 5px 5px;
+        text-align: center;
+        color: white;
+    }
+
+    .hero-image {
+        text-align: center;
+    }
+
+    .logo p {
+        font-size: 40px;
+        font-weight: 15px;
+        color: white;
+        float: left;
+    }
+
+    #button1 {
+        float: right;
+        padding-right: 10px;
+    }
+
+    #selfLearning {
+        background-color: #964B00;
+        text-align: center;
+        color: white;
+        padding: 100px;
+        font-size: large;
+    }
+
+
+    /* LearnPython.html page style */
+    h3 {
+        font-size: 20px;
+        text-decoration: underline;
+        padding-left: 10px;
+    }
+
+    /* Selectors */
+
+    /* Universal selector */
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    /* mutiple selector*/
+    .youtubeVideo,
+    .learnJavaHeading,
+    .imgJavaCode {
+        text-align: center;
+        color: white;
+    }
+
+    .learnJavaHeading,
+    .aboutHeading {
+        padding: 160px 5px 10px 10px;
+    }
+
+    .imgPythonCode,
+    .learnJavaHeading,
+    .imgJavaCode {
+        background-color: rgb(88, 87, 87);
+        color: white;
+    }
+
+    img,
+    video,
+    iframe {
+        margin: 10px;
+        padding: 5px;
+        border: 5px solid black;
+        background-color: #964B00;
+    }
+
+    ol,
+    ul {
+        padding: 20px;
+    }
+
+    table,
+    th {
+        border: 3px solid black;
+        border-collapse: collapse;
+    }
+
+    /* Sibling selector */
+
+    h1~p {
+        text-align: center;
+        color: black;
+        background-color: #d87109;
+        padding: 10px;
+        font-size: 20px;
+        margin: 5px 0px 15px 0px;
+    }
+
+    /* Child Selector */
+    ul>a {
+        float: right;
+        font-size: 20px;
+        padding: 5px 15px;
+        color: white;
+        text-decoration: solid;
+    }
+
+    /* Adjacent selector */
+    h3+p {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    /* Attribute selector */
+    a[target="_blank"] {
+        background-color: yellow;
+    }
+
+    input[type=submit] {
+        width: 200px;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    input[type=text],
+    select {
+        box-sizing: border-box;
+        width: 250px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 4px;
+        font-size: 30px;
+    }
+
+    input[type=email],
+    select {
+        box-sizing: border-box;
+        width: 250px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 4px;
+        font-size: 30px;
+    }
+
+    textarea[name="comments"] {
+        border: 2px solid black;
+        font-size: 20px;
+    }
+
+    /* Pseudo element selector */
+
+    /* Descendant */
+    ol ol {
+        list-style-type: lower-alpha;
+        font-size: 20px;
+    }
+
+    ol {
+        padding: 40px;
+        list-style-type: decimal;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style-type: square;
+        font-size: 20px;
+        padding: 40px;
+    }
+
+    .youtubeVideo {
+        background-color: #964B00;
+    }
+
+    /* LearnJava.html page Grid */
+    #grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        justify-content: space-around;
+        padding-top: 20px;
+        background: #964B00;
+    }
+
+    /* about.html page */
+    table {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 200px 200px 20px 200px;
+    }
+
+    img:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.5s;
+        object-position: bottom;
+    }
+
+    p h5 {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    #message {
+        color: black;
+    }
+
+    form {
+        padding-left: 10px;
+        font-size: 30px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .daytime {
+        background-color: #7FB3D5;
+        /* blue */
+        color: #fff;
+    }
+
+    .nighttime {
+        background-color: #070A1E;
+        /* dark blue */
+        color: #fff;
+    }
+
+    .body-new1 {
+        background-color: #795F11;
+        color: black;
+    }
+
+    /* New colors for header */
+    .header-new1 {
+        background-color: #660096;
+        color: white;
+    }
+
+    .body-new2 {
+        background-color: #048E75;
+        color: black;
+    }
+
+    /* New colors for header */
+    .header-new2 {
+        background-color: #152E05;
+        color: white;
+    }
+
+    .body-new3 {
+        background-color: #CA9F20;
+        color: black;
+    }
+
+    /* New colors for header */
+    .header-new3 {
+        background-color: #009633;
+        color: white;
+    }
+
+}
+
+@media (min-width:1400px) {
+    body {
+        background-color: rgb(88, 87, 87);
+        color: white;
+    }
+
+    /* all the links --> anchor tag */
+    a:hover {
+        color: black;
+        background-color: rgb(88, 87, 87);
+    }
+
+    nav a.active {
+        background-color: rgb(88, 87, 87);
+    }
+
+    /* logo (anchor tag) link */
+    .logo p:hover {
+        color: black;
+        background-color: gray;
+    }
+
+    /* form submit button */
+    input[type=submit]:hover {
+        background-color: rgb(38, 37, 37);
+    }
+
+    /* index.html page Flexbox style */
+    header {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 10%;
+        background-color: #964B00;
+        color: white;
+        width: 100%;
+        height: 75px;
+    }
+
+    .hero-text {
+        padding: 200px 0px 0px 0px;
+        text-align: center;
+        color: white;
+        font-size: larger;
+    }
+
+    .hero-image {
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .logo p {
+        font-size: 50px;
+        font-weight: 30px;
+        color: white;
+        float: left;
+    }
+
+    #button1 {
+        float: right;
+    }
+
+    #selfLearning {
+        background-color: #964B00;
+        text-align: center;
+        color: white;
+        padding: 170px;
+        font-weight: bolder;
+    }
+
+
+    /* LearnPython.html page style */
+    h3 {
+        font-size: 20px;
+        text-decoration: underline;
+        padding-left: 10px;
+    }
+
+    /* Selectors */
+
+    /* Universal selector */
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    /* mutiple selector*/
+    .youtubeVideo,
+    .learnJavaHeading,
+    .imgJavaCode {
+        text-align: center;
+        color: white;
+    }
+
+    .learnJavaHeading,
+    .aboutHeading {
+        padding: 160px 5px 15px 5px;
+    }
+
+    .learnPythonHeading,
+    .learnJavaHeading,
+    .imgJavaCode {
+        background-color: rgb(88, 87, 87);
+        color: white;
+    }
+
+    img,
+    video,
+    iframe {
+        margin: 10px;
+        padding: 5px;
+        border: 5px solid black;
+        background-color: #964B00;
+    }
+
+    ol,
+    ul {
+        padding: 20px;
+    }
+
+    table,
+    th {
+        border: 3px solid black;
+        border-collapse: collapse;
+    }
+
+    /* Sibling selector */
+
+    h1~p {
+        text-align: center;
+        color: black;
+        background-color: #d87109;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    /* Child Selector */
+    ul>a {
+        float: right;
+        font-size: 25px;
+        padding: 5px 15px;
+        color: white;
+        text-decoration: solid;
+    }
+
+    /* Adjacent selector */
+    h3+p {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    /* Attribute selector */
+    a[target="_blank"] {
+        background-color: yellow;
+    }
+
+    input[type=submit] {
+        width: 200px;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    input[type=text],
+    select {
+        box-sizing: border-box;
+        width: 250px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 4px;
+        font-size: 25px;
+    }
+
+    input[type=email],
+    select {
+        box-sizing: border-box;
+        width: 250px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 4px;
+    }
+
+    textarea[name="comments"] {
+        border: 2px solid black;
+        font-size: 17px;
+        font-size: 20px;
+    }
+
+    /* Pseudo element selector */
+
+    /* Descendant */
+    ol ol {
+        list-style-type: lower-alpha;
+        font-size: 20px;
+    }
+
+    ol {
+        padding: 20px;
+        list-style-type: decimal;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style-type: square;
+        font-size: 20px;
+    }
+
+    .youtubeVideo {
+        background-color: #964B00;
+    }
+
+    /* LearnJava.html page Grid */
+    #grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        justify-content: space-around;
+        padding-top: 20px;
+        background: #964B00;
+    }
+
+    /* about.html page */
+    table {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .photo-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 200px 200px 20px 200px;
+    }
+
+    img:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        transition: 0.5s;
+        object-position: bottom;
+    }
+
+    p h5 {
+        padding-left: 10px;
+        font-size: 30px;
+    }
+
+    #message {
+        color: rgb(0, 0, 0);
+        background-color: white;
+    }
+
+    form {
+        padding-left: 20px;
+    }
+
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .daytime {
+        background-color: #7FB3D5;
+        /* blue */
+        color: #fff;
+    }
+
+    .nighttime {
+        background-color: #070A1E;
+        /* dark blue */
+        color: #fff;
+    }
+
+    .body-new1 {
+        background-color: #795F11;
+        color: black;
+    }
+
+    /* New colors for header */
+    .header-new1 {
+        background-color: #660096;
+        color: white;
+    }
+
+    .body-new2 {
+        background-color: #048E75;
+        color: black;
+    }
+
+    /* New colors for header */
+    .header-new2 {
+        background-color: #152E05;
+        color: white;
+    }
+
+    .body-new3 {
+        background-color: #CA9F20;
+        color: black;
+    }
+
+    /* New colors for header */
+    .header-new3 {
+        background-color: #009633;
+        color: white;
+    }
+}
