@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- favicon -->
+    <link rel="icon" href="../ourEarth.png">
+    <title>LearnJava.html</title>
+    <!--Link to the styles.css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="LearnJava">
+    <header>
+        <div class="logo">
+            <a data-active="Home" href="index.html">
+                <p>FunLearning</p>
+            </a>
+        </div>
+        <div class="links">
+            <nav>
+                <ul class="menu">
+                    <a data-active="javaPhotoGallery" href="javaPhotoGallery.html">JavaPhotoGallery</a>
+                    <a data-active="About" href="About.html">About</a>
+                    <a data-active="LearnJava" href="LearnJava.html">LearnJava</a>
+                    <a data-active="Home" href="index.html">Home</a>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="learnJavaHeading">
+        <h1>
+            LearnJava
+        </h1>
+        <br>
+        <p>
+            Java is also an object oriented language. It is an easiest language to start your codding journey that is
+            why
+            it
+            is a language for
+            beginners.
+        </p>
+    </div>
+    <div class="imgJavaCode">
+        <!-- image containg hello_world code -->
+        <img width="450" height="170" src="../Java_helloWorld.jpeg" alt="python hello world code">
+    </div>
+    <div>
+        <h3>Variables and Types</h3>
+        <p>A variable is a location in the memory where you store values.<br>
+            It has different types.
+        </p>
+        <!-- nested list containg datatypes -->
+        <ol>
+            <li>int type</li>
+            <ol type="a">
+                <li>int num = 10;</li>
+                <li>int idNum = 00919;</li>
+            </ol>
+            <li>String type</li>
+            <ol type="a">
+                <li>String name = “Fatema”;</li>
+                <li>String lastName = “Bohra”;</li>
+            </ol>
+            <li>boolean type</li>
+            <ol type="a">
+                <li>boolean is_female = true;</li>
+                <li>boolean is_male = false;</li>
+            </ol>
+        </ol>
+        <!-- link to a picture on another website for more concepts -->
+        <p><strong><em>
+                    <h2>&nbsp;Check the image on datatypes for more clarification <a onclick="alertMessage()"
+                            href="../java_datatypes.jpeg" target="_blank">here</a></h2>
+                </em>
+            </strong>
+        </p>
+        <br>
+        <h3>Arrays:</h3>
+        <ul>
+            <li>
+                Arrays and lists have many similarities.
+            </li>
+            <li>
+                You are free to include as many and any kind of variables as you like in them.
+            </li>
+            <li>
+                Iterating on Arrays is quite easy. <strong>To understand better see the video below or listen to the
+                    audio.</strong>
+            </li>
+        </ul>
+    </div>
+    <div id="grid-container">
+        <!-- audio from a podcast, expalining java concepts -->
+        <div>
+            <audio controls>
+                <source src="../javaEasily.m4a">
+            </audio>
+            <p> <em>Source: The Java Easily Podcast: Java Easily Podcast #7 <a
+                        href="https://podcasts.apple.com/us/podcast/java-easily-podcast-7-the-quickest-way-to-learn-java/id1556259943?i=1000534973627"
+                        target="_blank"> Matt Speake </a></em>
+            <p>
+        </div>
+        <br><br><br>
+        <!-- Youtube video & it's source -->
+        <div>
+            <iframe width="450" height="250" src="https://www.youtube.com/embed/_Wf2rbL9wQU"></iframe>
+            <p> <em>Source: Java Tutorial for Beginners #8 - Arrays <a
+                        href="https://www.youtube.com/watch?v=u1_hg6L_UFU" target="_blank"> Tech With Tim</a> (Youtube).
+                </em>
+            <p>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- favicon -->
+    <link rel="icon" href="../ourEarth.png">
+    <title>about.html</title>
+    <!--Link to the styles.css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="About">
+    <header>
+        <div class="logo">
+            <a data-active="Home" href="index.html">
+                <p>FunLearning</p>
+            </a>
+        </div>
+        <div class="links">
+            <nav>
+                <ul class="menu">
+                    <a data-active="javaPhotoGallery" href="javaPhotoGallery.html">JavaPhotoGallery</a>
+                    <a data-active="About" href="About.html">About</a>
+                    <a data-active="LearnJava" href="LearnJava.html">LearnJava</a>
+                    <a data-active="Home" href="index.html">Home</a>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="aboutHeading">
+        <h1>About this website:</h1>
+        <br><br>
+        <!-- table explaining the two main concepts of the website -->
+        <table>
+            <caption>I developed this website to teach beginners about:</caption>
+            <tr>
+                <th>&nbsp;1. Python Fundamentals&nbsp;</th>
+                <th>&nbsp;2. Java Fundamentals&nbsp;</th>
+            </tr>
+            <tr>
+                <td>Variables</td>
+                <td>Lists or Arrays</td>
+            </tr>
+        </table>
+    </div>
+    <!--Form-->
+    <div id="error">
+        <div id="form">
+            <form action="https://example.com" target="_blank" method="POST">
+                <p>Please let us know a little about you. Thank you.</p><br>
+                <p>
+                    FullName:
+                    <input type="text" id="userInput"> <br>
+                </p>
+                <h5 id="message"></h5>
+                <br>
+                <p>
+                    <label for="myEmail">Email Add:</label>
+                    <input type="email" name="myEmail" id="myEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                        required>
+                </p>
+                <br>
+                <p>If you have any comments please feel free to share!</p>
+                <textarea name="comments" rows="4" cols="35" placeholder="Comments..."></textarea>
+                <br>
+                <input type="submit" onclick="eventHandlerFunc()">
+                <h6>Please click submit to see user name appear on screen (event handler)</h6><br><br>
+            </form>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
